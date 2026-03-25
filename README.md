@@ -23,7 +23,7 @@ Analisar a relação entre risco e retorno de um ativo em relação ao mercado, 
 2. Cálculo de retornos logarítmicos mensais
 3. Cálculo de retornos em excesso:
    
-   \[R<sub>i</sub> − R<sub>f</sub> = α + β (R<sub>m</sub> − R<sub>f</sub>) + ε   \]
+R<sub>i</sub> − R<sub>f</sub> = α + β (R<sub>m</sub> − R<sub>f</sub>) + ε
 
 4. Estimação via regressão OLS (statsmodels)
 

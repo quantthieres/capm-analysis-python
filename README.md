@@ -1,6 +1,8 @@
-# CAPM Analysis em Python 📈
+# CAPM Analysis em Python
 
 Este projeto implementa o modelo de precificação de ativos (CAPM) utilizando dados reais de mercado, com foco na estimação empírica e interpretação econômica dos resultados.
+
+<img width="924" height="540" alt="CAPM VALE3 vs BVSP" src="https://github.com/user-attachments/assets/269e8715-f3df-4664-86e7-20171d819628" />
 
 ---
 

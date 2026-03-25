@@ -65,13 +65,13 @@ Neste caso: **β ≈ 0.79**, indicando que o ativo é menos sensível ao mercado
 ---
 
 ### Alpha
-O retorno que o ativo gerou **além do que o CAPM previa** dado seu nível de risco.
 
 - **α > 0** → ativo superou o esperado  
 - **α = 0** → retorno compatível com o risco  
 - **α < 0** → desempenho abaixo do esperado  
 
-Neste caso: **alpha não é estatisticamente significativo**, sugerindo que o ativo está corretamente precificado pelo CAPM.
+O alpha estimado é próximo de zero (~0,08% ao mês) e não apresenta significância estatística.
+Isso indica que não há evidência de retornos acima do previsto pelo CAPM, sugerindo que o ativo está corretamente precificado em relação ao risco sistemático.
 
 ---
 
@@ -81,7 +81,13 @@ Mede quanto da variação do ativo é explicada pelo mercado.
 - **R² alto (> 0,7)** → forte dependência do mercado  
 - **R² baixo (< 0,3)** → outros fatores dominam  
 
-Neste caso: **R² ≈ 0.25**, o que é esperado para ativos individuais, indicando que o mercado explica apenas parte dos retornos.
+Neste caso: **R² ≈ 0.25**, o que é esperado para ativos individuais, indicando que o mercado explica apenas parte dos retornos. Significa que apenas 25% da variação do retorno da VALE3 é explicada pelo Ibovespa. Os outros 75% vêm de fatores que o CAPM ignora.
+
+Esse "outras coisas" no caso da VALE3 são principalmente:
+
+Preço do minério de ferro (cotado em USD, determinado pela demanda chinesa)
+Câmbio BRL/USD (receita em dólar, custo em real)
+Decisões regulatórias (royalties, licenças ambientais)
 
 ---
 
@@ -92,6 +98,29 @@ Se \( R_m - R_f < 0 \), o mercado rendeu menos que a taxa livre de risco.
 Nesse cenário, o CAPM perde interpretação econômica, pois o modelo assume prêmio de risco positivo.
 
 Isso é relevante para o Brasil, onde houve períodos prolongados com CDI elevado.
+
+---
+
+### Retorno esperado (CAPM)
+
+E(R<sub>i</sub>) = R<sub>f</sub> + β (R<sub>m</sub> − R<sub>f</sub>)
+
+O modelo CAPM estima o retorno esperado do ativo com base em seu risco sistemático (beta).
+
+Neste caso:
+
+- **Retorno esperado mensal:** ~0,61%  
+- **Retorno esperado anual:** ~7,57%  
+
+👉 Esse valor representa o retorno “justo” para o ativo, dado seu nível de risco em relação ao mercado.
+
+No entanto, observa-se que o retorno esperado é inferior à taxa livre de risco (CDI ≈ 14,5% a.a.).
+
+Isso ocorre porque, no período analisado, o retorno do mercado foi inferior ao da taxa livre de risco, gerando um **prêmio de risco negativo**.
+
+Nesse contexto, o CAPM implica que ativos com maior exposição ao mercado (beta positivo) apresentam menor retorno esperado.
+
+Esse resultado reforça uma limitação importante do modelo: sua dependência de um prêmio de risco positivo, o que nem sempre ocorre em economias como a brasileira.
 
 ---
 

@@ -124,6 +124,17 @@ Esse resultado reforça uma limitação importante do modelo: sua dependência d
 
 ---
 
+## Análise da distribuição dos retornos
+
+Além da estimação do CAPM, o projeto também compara a distribuição empírica dos retornos logarítmicos com ajustes Normal e t de Student.
+
+Essa etapa ajuda a mostrar que retornos financeiros frequentemente apresentam caudas mais pesadas do que a distribuição Normal, o que limita hipóteses simplificadoras usadas em vários modelos.
+
+<img width="1200" height="600" alt="Distribuition_of_returns" src="https://github.com/user-attachments/assets/f1a80aec-67dc-419b-a7ff-db689de27ae4" />
+
+
+---
+
 ## Limitações do CAPM ⚠️
 
 1. **Um único fator**  

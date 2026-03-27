@@ -134,14 +134,14 @@ Essa etapa ajuda a mostrar que retornos financeiros frequentemente apresentam ca
 
 ### Como interpretar os resultados
 
-Média dos retornos: 0.000321 
-Desvio-padrão: 0.024477 
-Curtose: 11.871881 
-Excesso de curtose: 8.871881 
+Média dos retornos: 0.000321
+Desvio-padrão: 0.024477
+Curtose: 11.871881
+Excesso de curtose: 8.871881
 
-Parâmetros da t de Student ajustada: 
-Graus de liberdade (df): 3.661806 
-Loc: 0.000084 
+Parâmetros da t de Student ajustada:
+Graus de liberdade (df): 3.661806
+Loc: 0.000084
 Scale: 0.016834
 
 #### Caso 1: excesso de curtose > 0

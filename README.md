@@ -132,6 +132,54 @@ Essa etapa ajuda a mostrar que retornos financeiros frequentemente apresentam ca
 
 <img width="1200" height="600" alt="Distribuition_of_returns" src="https://github.com/user-attachments/assets/f1a80aec-67dc-419b-a7ff-db689de27ae4" />
 
+### Como interpretar os resultados
+
+Média dos retornos: 0.000321 
+Desvio-padrão: 0.024477 
+Curtose: 11.871881 
+Excesso de curtose: 8.871881 
+
+Parâmetros da t de Student ajustada: 
+Graus de liberdade (df): 3.661806 
+Loc: 0.000084 
+Scale: 0.016834
+
+#### Caso 1: excesso de curtose > 0
+
+Significa:
+
+- A distribuição apresenta **caudas mais pesadas**
+- Existe **maior probabilidade de eventos extremos** do que a prevista pela Normal
+
+Esse é o padrão mais comum em retornos financeiros; cenário mais realista.
+
+---
+
+#### Caso 2: a t de Student se ajusta melhor nas caudas
+
+Significa:
+
+- A distribuição t representa melhor o comportamento dos dados
+- A distribuição Normal está **subestimando movimentos extremos**
+- O risco de grandes perdas ou ganhos é maior do que o modelo normal sugere
+
+---
+
+#### Caso 3: graus de liberdade (df) baixos
+
+Exemplo:
+- df = 4  
+- df = 6  
+- df = 8  
+
+Significa:
+
+- A distribuição possui **caudas pesadas**
+- Quanto menor o df, maior a diferença em relação à Normal
+- Quanto maior o df, mais a t de Student se aproxima de uma distribuição Normal
+
+No caso analisado, da VALE3.SA, (df ≈ 3,66), a evidência de caudas pesadas é forte.
+
 
 ---
 
@@ -156,3 +204,22 @@ Essa etapa ajuda a mostrar que retornos financeiros frequentemente apresentam ca
 - O CAPM captura o risco sistemático, mas não explica totalmente os retornos
 - Beta é estatisticamente significativo, indicando relação com o mercado
 - O baixo R² reforça a importância de outros fatores (setor, commodities, macro)
+
+### Distribuição dos retornos
+
+- Os retornos apresentam **excesso de curtose elevado (~8,87)**, indicando caudas pesadas
+- Eventos extremos (grandes altas e quedas) ocorrem com frequência maior do que a prevista pela distribuição Normal
+- A distribuição t de Student se ajusta melhor aos dados, especialmente nas caudas
+- O baixo número de graus de liberdade (df ≈ 3,66) reforça a presença de risco extremo
+
+### Implicações para modelagem
+
+- A hipótese de normalidade, comum em muitos modelos financeiros, não se sustenta para este ativo
+- O risco de eventos extremos tende a ser subestimado por modelos baseados em distribuição Normal
+- Isso ajuda a explicar o baixo poder explicativo do CAPM (R²), já que o modelo não captura bem esses eventos
+
+### Conexão entre CAPM e distribuição
+
+- O CAPM assume implicitamente um comportamento mais estável dos retornos
+- No entanto, a evidência empírica mostra que os retornos são mais voláteis e apresentam caudas pesadas
+- Isso reforça que o CAPM deve ser interpretado como uma aproximação, e não como um modelo completo da realidade
